@@ -1,133 +1,176 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-        <style>
-            body {
-                font-family: 'Source Sans Pro', sans-serif;
-                background-color: rgb(240, 243, 244);
-            }
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: rgb(240, 243, 244);
+        }
 
-            h1, h2, h3, h4, h5, h6 {
-                color: #D1232B;
-                font-weight: normal;
-            }
+        .wrapper {
+            width: 75%;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1.25px solid #dee5e7;
+            padding: 30px;
+            color: rgb(113, 113, 113);
+            font-size: 14px;
+        }
 
-            ol, ul {
-                margin-left: 15px;
-                padding: 0;
-            }
+        /* Font-sizes */
+        p {
+            color: #717171;
+            margin: 0;
+            margin-bottom: 10px;
+        }
 
-            .wrapper {
-                width: 860px;
-                margin: 0 auto;
-                background-color: #fff;
-                border: 1.25px solid #dee5e7;
-                padding: 30px;
-                color: rgb(113, 113, 113);
-                font-size: 14px;
-            }
+        .hd1 {
+            color: #D1232B;
+        }
 
-            h1, h2 {
-                margin: 0; 
-                padding: 0;
-            }
+        /* Article title*/
+        span[style*="font-size: 36pt;"] .hd1 {
+            font-size: 1em !important;
+            font-weight: bold !important;
+        }
 
-            h1 {
-                font-size: 2em;
-                font-weight: bold;
-                margin-bottom: 30px;
-            }
-            h2 {
-                font-size: 1.5em;
-            }
+        /* Subsection title */
+        span[style*="font-size: 24pt;"] .hd1 {
+            font-size: 0.8em !important;
+            margin: 0;
+            padding: 0;
+        }
+        span[style*="font-size: 18pt;"] .hd1 {
+            font-size: 0.7em !important;
+            color: #333 !important;
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+        }
+        span[style*="font-size: 12pt;"] {
+            font-size: 0.6em !important;
+        }
 
-            li {
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
+        /*****
+         ALERT BOXES GLOBAL STYLES
+         *****/
+        span[style*="font-size: 7pt;"]:before,
+        span[style*="font-size: 7.5pt;"]:before {
+            font-weight: bold !important;
+            display: inline-block;
+            font-style: normal !important;
+            text-transform: uppercase;
+            vertical-align: top;
+        }
 
-            li img {
-                display: block;
-                margin-top: 20px;
-            }
+        span[style*="font-size: 7pt;"],
+        span[style*="font-size: 7.5pt;"] {
+            font-size: 1em !important;
+            padding: 5px !important;
+            border-radius: 3px !important;
+            display: block;
+            width: 100%;
+            font-style: italic !important;
+        }
 
-            p {
-                margin-top: 0;
-            }
+        /*** Article note box ***/
+        span[style*="font-size: 7pt;"]:before {
+            content: "Note: " !important;
+        }
 
-            .subtitle {
-                color: #ccc;
-                font-style: italic;
-            }
-            </style>
-    </head>
-    <body>
-<!-- OUTER FRAME - DO NOT EDIT -->
-<div class="margin">
-<div class="margin">
-<div class="margin"><!-- OUTER FRAME - DO NOT EDIT -->
+        span[style*="font-size: 7pt;"] {
+            background: #ccc !important;
+            color: #1a1a1a !important;
+        }
+
+        /*** Article warning box ***/
+        span[style*="font-size: 7.5pt;"]:before {
+            content: "Warning: " !important;
+        }
+
+        span[style*="font-size: 7.5pt;"] {
+            background: #D1232B !important;
+            color: #fff !important;
+        }
+
+        /*****
+        LINKS
+        *****/
+        a, a:visited {
+            color: #D1232B;
+            font-weight: bold;
+        }
+
+         /*****
+        ORDERED LISTS
+        ******/
+        ol li {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /*****
+        IMAGES
+        *****/
+        img {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /*****
+        FORMATTED CODE
+        *****/
+        span[style*="font-family: terminal, monaco;"] {
+            background: #eee;
+            border-radius: 3px;
+            padding: 5px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
 <div class="wrapper">
-<div class="title_wrapper">
-    <h1 class="title">Jive: Add/Remove Favourite Contacts</h1>
-</div>
-<div class="overview_wrapper">
-    <h2>Overview</h2>
-    <p class="paragraph">Nulla efficitur, nisl sit amet porta pretium, tortor leo rutrum velit, nec posuere risus nisl mollis nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus sem vel erat imperdiet, ut consectetur metus ornare. Nunc vehicula eu velit eu pretium. Maecenas libero odio, gravida id iaculis ut, efficitur nec diam. Pellentesque ac dolor sed risus tristique posuere. Sed in felis eu mauris finibus consequat. Nulla ac arcu a urna egestas pharetra sed non leo. Donec ante nulla, interdum non porttitor eu, maximus id libero. Cras dictum enim at odio ultricies tempor. Proin euismod fermentum condimentum.</p>
-    <ol>
-        <li>Launch Jive app on your phone. 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg">
-            <span class="subtitle">Figure 1: Picture of computer</span>
-        </li>
-        <li>Click the hamburger icon on the upper-left corner. 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg">
-            <span class="subtitle">Figure 2: Picture of computer again</span>
-        </li>
-        <li>Click <strong>Contacts</strong>, search by name or extension number on the search bar at the top.</li>
-        <li>Click the contact you would like to add to favorites.</li>
-        <li>On the contact information windows, hit <strong>Add to Favorites</strong> at the bottom. </li>
-        <li>To remove the person from favorites, click <strong>Remove From Favorites</strong></li>
-    </ol>
-</div>
-<div class="content_wrapper">
-    <h2>Content</h2>
-    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id interdum dui. Aliquam porttitor mattis lacus eu venenatis. Nam commodo, ligula nec dignissim consectetur, ligula nunc congue quam, nec euismod odio quam in nunc. Proin tincidunt a mi ut congue. Sed eleifend, odio in faucibus dapibus, nisi magna rutrum velit, in tristique risus ipsum vitae est. Fusce mollis vehicula nisl quis facilisis. Vivamus in ante auctor massa pellentesque pretium nec vel ipsum. Duis non odio et sapien laoreet luctus eget eu dui.</p>
-    <p class="paragraph">Nulla efficitur, nisl sit amet porta pretium, tortor leo rutrum velit, nec posuere risus nisl mollis nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus sem vel erat imperdiet, ut consectetur metus ornare. Nunc vehicula eu velit eu pretium. Maecenas libero odio, gravida id iaculis ut, efficitur nec diam. Pellentesque ac dolor sed risus tristique posuere. Sed in felis eu mauris finibus consequat. Nulla ac arcu a urna egestas pharetra sed non leo. Donec ante nulla, interdum non porttitor eu, maximus id libero. Cras dictum enim at odio ultricies tempor. Proin euismod fermentum condimentum.</p>
-    <p class="paragraph">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque auctor rutrum mi, sed sagittis neque lobortis at. Duis sit amet purus eget orci maximus elementum. In hac habitasse platea dictumst. Sed ipsum nunc, posuere nec orci at, facilisis varius tellus. Proin maximus eros et tincidunt ullamcorper. Ut lobortis, nulla eget efficitur pharetra, leo lectus consectetur mi, ac tincidunt tortor metus eget felis. Ut in congue dolor. Fusce at eros tortor. Nullam efficitur sollicitudin lacus, ac volutpat enim rhoncus sed. Nam sit amet lorem nec nisl lacinia varius. Duis in velit ac erat lobortis efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam magna neque, posuere non enim sit amet, sollicitudin venenatis odio.</p>
-    <p class="paragraph">Etiam vitae eleifend diam. Nulla nisl augue, iaculis nec augue vel, dignissim porttitor ante. Nunc id suscipit diam. Phasellus quis bibendum tellus. Quisque ut mi quis ligula ullamcorper efficitur vin ipsum. Donec eget lorem lobortis, facilisis nisl id, vulputate ex. Nam ac eleifend enim. Nam tempus suscipit ipsum, sed pharetra dolor auctor nec. Quisque et sapien dignissim, dignissim dolor vel, ullamcorper nibh. Nunc hendrerit et mi nec ullamcorper. Quisque interdum urna id urna congue, non convallis erat tincidunt.</p>
-    <p class="paragraph">Aenean a fermentum turpis, sodales egestas lorem. Duis at tortor libero. Nulla vel augue lacinia, ultricies sem ut, porttitor neque. Sed quam lorem, dictum vel nibh a, aliquam mattis nisi. Phasellus congue vulputate ligula sit amet luctus. Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada. Aenean a enim vitae est dignissim consequat.</p>
-    <h2>Overview</h2>
-    <p class="paragraph">This article will show you how to add or remove your favorite contacts. </p>
-    <h2>Instructions on the Jive App</h2>
-    <ol>
-        <li>Launch Jive app on your phone. 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg">
-
-        </li>
-        <li>Click the hamburger icon on the upper-left corner. 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg"></li>
-        <li>Click <strong>Contacts</strong>, search by name or extension number on the search bar at the top.</li>
-        <li>Click the contact you would like to add to favorites.</li>
-        <li>On the contact information windows, hit <strong>Add to Favorites</strong> at the bottom. </li>
-        <li>To remove the person from favorites, click <strong>Remove From Favorites</strong></li>
-    </ol>
-
-
-    <h2>Unordered List</h2>
+    <p><span class="ng-scope" style="font-size: 36pt;"><span class="hd1">Jive Communications System</span></span></p>
+    <p><span class="ng-scope" style="font-size: 24pt;"><span class="hd1">What is Jive and what does it mean for you?</span></span></p>
+    <p>Jive is a new cloud-based Voice over Internet Protocol phone service that Mozilla offices are beginning to use. Not everyone in the company is using Jive yet.</p>
     <ul>
-        <li>Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada</li>
-        <li>Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada</li>
-        <li>Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada</li>
-        <li>Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada</li>
+        <li>Portland</li>
+        <li>London</li>
+        <li>Vancouver</li>
+        <li>Paris</li>
     </ul>
-    <h2>Related Links</h2>
-    <a href="#">Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada</a> <br>
-    <a href="#">Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada</a> <br>
-    <a href="#">Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada</a> <br>
-    <a href="#">Integer finibus suscipit magna et fermentum. Aenean ut odio quis erat fringilla malesuada</a> <br>
+    <p><span class="ng-scope" style="font-size: 7pt;">Curabitur id sodales eros. Proin vitae augue eget risus malesuada tristique. Fusce imperdiet non tortor non vestibulum. Integer eu iaculis lorem. Donec ac nulla sit amet orci pharetra condimentum. Pellentesque at fringilla diam. Vestibulum iaculis justo nec purus tristique eleifend. Etiam ipsum est, volutpat id libero vitae, auctor pulvinar risus. Nunc dapibus nulla velit, a vestibulum dolor eleifend finibus. </span></p>
+    <p><span class="ng-scope" style="font-size: 7.5pt;">Praesent lobortis tortor libero, feugiat lacinia urna mattis in. Sed varius vitae metus id placerat. Praesent interdum nisi quis dictum porta. Integer vel efficitur mauris. Mauris molestie purus volutpat, porta sapien ac, ornare ligula. Curabitur tristique odio at maximus ullamcorper. Nam venenatis elit non venenatis efficitur. Morbi id varius est, ac tristique arcu. Sed condimentum molestie eleifend. </span></p>
+    <p><span class="ng-scope" style="font-size: 24pt;"><span class="hd1">Getting Started:</span></span></p>
+    <p><span class="ng-scope" style="font-size: 18pt;"><span class="hd1">Things You Need To Know Whether you have your own extension or not</span></span></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac ultricies eros. Donec ullamcorper rhoncus turpis, sed varius metus sollicitudin tempus. Donec ac tellus ac diam <a href="">malesuada</a> vehicula. Aliquam cursus augue in ullamcorper cursus. Vestibulum sit amet ex nunc. Nunc gravida lacus nec ante finibus sagittis. Sed ligula nulla, laoreet sed bibendum ac, faucibus in tortor. Nullam non neque nec urna convallis pulvinar in gravida diam. Quisque non ligula nec diam feugiat accumsan ac sed tortor. Sed aliquet sit amet nisl efficitur aliquam. Suspendisse potenti. Integer at dolor felis. Nullam vestibulum felis commodo arcu accumsan, ut ultricies erat consequat. <a href="">Praesent porttitor felis risus</a>, a iaculis lectus vestibulum eu. Sed convallis ornare pulvinar. Curabitur urna est, consectetur nec eleifend in, laoreet vitae massa. </p>
+    <ol>
+        <li>Sed ligula nulla, laoreet sed bibendum ac, faucibus in tortor. Nullam non neque nec urna convallis pulvinar in gravida diam. Quisque non ligula nec diam feugiat accumsan ac sed tortor.</li>
+        <li>Run the command: <span style="font-family: terminal, monaco;">sudo mtr mozilla.org</span><img src="pic1.png"></li>
+        <li>Sed ligula nulla, laoreet sed bibendum ac, faucibus in tortor. Nullam non neque nec urna convallis pulvinar in gravida diam. Quisque non ligula nec diam feugiat accumsan ac sed tortor.
+            <ol>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+            </ol>
+            <ul>
+                <li>Ordered list item</li>
+                <li>Ordered list item</li>
+                <li>Ordered list item</li>
+                <li>Ordered list item</li>
+                <li>Ordered list item</li>
+                <ul>
+                    <li>Sublist item</li>
+                    <li>Sublist item</li>
+                    <li>Sublist item</li>
+                </ul>
+            </ul>
+        </li>
+        <li>Sed ligula nulla, laoreet sed bibendum ac, faucibus in tortor. Nullam non neque nec urna convallis pulvinar in gravida diam. Quisque non ligula nec diam feugiat accumsan ac sed tortor.</li>
+    </ol>
 </div>
-</div>
-</div>
-</div>
-</div></body>
+</body>
 </html>
